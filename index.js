@@ -15,7 +15,7 @@ app.use(cors());
 app.use(express.json());
 
 // Serve the built React client from ../client/dist (if it exists)
-const distPath = path.join(__dirname, '..', 'client', 'dist');
+const distPath = path.join(__dirname, 'client', 'dist');
 app.use(express.static(distPath));
 
 const server = createServer(app);
